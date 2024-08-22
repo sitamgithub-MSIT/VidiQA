@@ -10,16 +10,16 @@ The project is structured as follows:
 
 - `src\`: The folder that contains the source code for the project.
 
-  - `app\`: The folder that contains the source code for the main functionality of the application.
+  - `app\`: The folder containing the source code for the application's main functionality.
 
     - `model.py`: The file that contains the code for loading the model and the tokenizer.
     - `response.py`: The file that contains the function for generating the response for the input video and question.
 
-  - `utils\`: The folder that contains the utility function for the project.
+  - `utils\`: The folder containing the project's utility function.
     - `video_processing.py`: This file contains the functions for processing the video input.
 
   - `config.py`: This file contains the configuration for the used model.
-  - `logger.py`: This file contains the logging configuration for the project.
+  - `logger.py`: This file contains the project's logging configuration.
   - `exception.py`: This file contains the exception handling for the project.
 
 - `app.py`: The main file that contains the Gradio application for video question answering.
