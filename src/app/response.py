@@ -1,6 +1,7 @@
 # Necessary imports
 import sys
 from typing import Any, Dict
+import gradio as gr
 import spaces
 
 # Local imports
@@ -39,6 +40,10 @@ def describe_video(video: str, question: str) -> str:
         str: The generated answer to the question.
     """
     try:
+        # Check if video or question is None
+        if not video or not question:
+            gr.Warning("Please provide a video and a question.")
+
         # Encode the video frames
         frames = encode_video(video)
 
