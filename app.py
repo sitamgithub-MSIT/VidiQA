@@ -38,11 +38,12 @@ interface = gr.Interface(
     inputs=[video, query],
     outputs=response,
     examples=examples,
-    cache_examples="lazy",
+    cache_examples=True,
+    cache_mode="lazy",
     title=title,
     description=description,
     article=article,
     theme="ParityError/Anime",
-    allow_flagging="never",
+    flagging_mode="never",
 )
 interface.launch(debug=False)
