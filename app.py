@@ -23,13 +23,28 @@ response = gr.Textbox(label="Predicted answer", show_label=True, show_copy_butto
 examples = [
     [
         "./videos/sample_video_1.mp4",
-        "Here are some frames of a video. Describe this video in detail.",
+        "Here are some frames of a video. Describe this video.",
+        0.7,
+        0.8,
+        100,
+        512,
     ],
     [
         "./videos/sample_video_2.mp4",
         "¿Cuál es el animal de este vídeo? ¿Cuantos animales hay?",
+        0.7,
+        0.8,
+        100,
+        512,
     ],
-    ["./videos/sample_video_3.mp4", "Que se passe-t-il dans cette vidéo ?"],
+    [
+        "./videos/sample_video_3.mp4",
+        "Que se passe-t-il dans cette vidéo ?",
+        0.7,
+        0.8,
+        100,
+        512,
+    ],
 ]
 
 # Title, description, and article for the interface
